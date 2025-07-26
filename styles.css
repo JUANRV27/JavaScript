@@ -1,0 +1,68 @@
+:root {
+  --color-fondo: #222;
+  --color-texto: white;
+  --color-boton: #eee;
+  --color-boton-hover: #ddd;
+  --color-fondo-calculadora: #444;
+  --fuente-principal: 'Segoe UI', sans-serif;
+
+  --mimi-pink: #ffd6ffff;
+  --mauve: #e7c6ffff;
+  --mauve-2: #b79fff;
+  --periwinkle: #b8c0ffff;
+  --periwinkle-2: #bbd0ffff;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-boton-hover);
+  color: var(--periwinkle);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.Calculadora {
+  background-color: var(--periwinkle-2);
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#pantalla {
+  font-size: 2rem;
+  background-color: var(--color-boton-hover);
+  color: var(--mauve-2);
+  padding: 20px;
+  text-align: right;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 1.5rem;
+  color:var(--mauve-2);
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-boton);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+}
+
+
