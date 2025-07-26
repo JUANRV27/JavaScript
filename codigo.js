@@ -11,7 +11,7 @@ botones.forEach(boton => {
     const tipo = boton.dataset.tipo;
     const valor = boton.dataset.valor;
 
-    if( tipo === "numero" || tipo === "operacion"){
+    if( tipo === "numero" || tipo === "operacion" || tipo === "punto"){
     	expresion += valor;
       actualizarPantalla(expresion);
     } else if(tipo === "igual"){
